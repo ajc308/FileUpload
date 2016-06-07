@@ -30,3 +30,14 @@
 1. Create new Template via Look & Feel in the IDE
 2. Copy the code from `template.html` into the Template content, replacing `src=""` with the URL of the Flask application created above
 3. Create new Page Control of type HTML and select the newly created Template
+
+#### Uploading a File
+1. Enter the target Database & Table Names
+2. Browse and select a *.csv* file 
+3. Checking `Truncate target table?` will truncate the selected table before inserting new records from the file
+4. By default, the upload will insert into the column names of the CSV file. If there are extra columns, or column names that do not exactly match the table column (case sensitive), the upload will error out.
+  - Checking `Ignore non-matching fields?` will insert *only* into columns where the name from the CSV exactly matches the name in the target table.
+5. On error, an error messsage will be displayed below.  On success, the page will refresh.
+
+
+
